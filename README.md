@@ -1,4 +1,4 @@
-# Laurie et al. A Reevaluation of Risk Factors for Overwintering of *Podosphaera macularis* on Hop  
+# Laurie et al. Yard Age, Cultivar Susceptibility, and Spring Pruning Practices as Risk Factors for Overwintering of *Podosphaera macularis* on Hop
 
 The data set is an assessment of hop powdery mildew flag shoots in commercial hop yards assessed during 2014 to 2020. Variables used in the analysis reported in Laurie et al (2023) are given here, as explained below. NA indicates missing data for a given variable. 
 	
