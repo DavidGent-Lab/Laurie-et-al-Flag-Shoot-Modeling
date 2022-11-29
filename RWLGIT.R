@@ -800,30 +800,30 @@ fivehist4
 
 figure1 <- ggarrange(onehist, onehist1,
                      labels = c("Intercept", "Yard age"),
-                     font.label = list(size = 10),
+                     font.label = list(size = 15),
                      ncol = 2, nrow = 1)
 
 figure2 <- ggarrange(twohist, twohist1, twohist2,
                      labels = c("Intercept", "Yard age", "Susceptibility"),
-                     font.label = list(size = 10),
+                     font.label = list(size = 15),
                      ncol = 3, nrow = 1)
 
 figure3 <- ggarrange(threehist, threehist1, threehist2, threehist3,
                      labels = c("Intercept", "Yard age", "Susceptibility", 
                                 "Pruning quality"),
-                     font.label = list(size = 10),
+                     font.label = list(size = 15),
                      ncol = 4, nrow = 1)
 
 figure4 <- ggarrange(fourhist, fourhist1, fourhist2, fourhist3,
                      labels = c("Intercept", "Yard age", "Susceptibility", 
                                 "Pruning type"),
-                     font.label = list(size = 10),
+                     font.label = list(size = 15),
                      ncol = 4, nrow = 1)
 
 figure5 <- ggarrange(fivehist, fivehist1, fivehist2, fivehist4, fivehist3,
                      labels = c("Intercept", "Yard age", "Susceptibility", 
                                 "Pruning type", "Pruning quality"),
-                     font.label = list(size = 10),
+                     font.label = list(size = 15),
                      ncol = 5, nrow = 1)
 
 figure1
@@ -870,9 +870,10 @@ ggplot(OutputMatrix5, aes(x = Risk, y = ProbEst)) +
   xlab("Yard age") +
   geom_point(aes(shape = Risk, fill = Risk), size=3) +
   scale_shape_manual(values=c(21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21))+
-  scale_fill_manual(values=c('green','green','yellow','yellow','orange',
-                             'orange','red','red','green','green','yellow',
-                             'yellow','orange','orange','red','red')) +
+  scale_fill_manual(values=c('lightblue','lightblue','deepskyblue3','deepskyblue3',
+                             'blueviolet','blueviolet','red','red',
+                             'lightblue','lightblue','deepskyblue3','deepskyblue3',
+                             'blueviolet','blueviolet','red','red')) +
   theme(legend.position='none') +
   geom_linerange(aes(ymin = Lower, ymax = Upper)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
